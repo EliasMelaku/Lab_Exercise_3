@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/fontawesome/css/all.min.css" />
+    <script src="assets/js/jquery-3.4.1.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-info sticky-top">
+      <a href="index.html" class="navbar-brand">
+        <i class="fab fa-shopify"></i> AdShoe</a
+      >
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#collapseNav"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="collapseNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a href="services.html" class="nav-link">Service</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="about.html" class="nav-link">About</a>
+          </li>
+        </ul>
+
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a href="login.html" class="nav-link"
+              ><i class="fas fa-sign-in-alt"></i> Login</a
+            >
+          </li>
+
+          <li class="nav-item">
+            <a href="register.html" class="nav-link"
+              ><i class="fas fa-plus"></i> Register</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- The Buying phase -->
+
+    <div class="container">
+      <h3><strong> Make </strong>a purchase</h3>
+      <hr />
+      <div class="row buyRow">
+        <div class="col">
+          <img src="assets/images/shoe8.png" alt="" />
+          <div class="little-images">
+            <img src="assets/images/shoe8.png" alt="" />
+            <img src="assets/images/shoe8.png" alt="" />
+            <img src="assets/images/shoe8.png" alt="" />
+          </div>
+        </div>
+        <div class="col">
+          <form action="">
+            <div class="form-group">
+              <label>Shoe number : </label>
+              <input
+                class="form-control"
+                type="text"
+                disabled
+                placeholder="code from Serices"
+              />
+            </div>
+            <div class="form-group">
+              <label>Shoe size : </label>
+              <select class="form-control" id="shoeSize">
+                <option value="36">36</option>
+                <option value="37">37</option>
+                <option value="38">38</option>
+                <option value="39">39</option>
+                <option value="40">40</option>
+                <option value="41">41</option>
+                <option value="42">42</option>
+                <option value="43">43</option>
+                <option value="44">44</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Color : </label>
+              <select class="form-control" id="shoeSize">
+                <option value="36">Navy Blue</option>
+                <option value="37">White Smoke</option>
+                <option value="38">Matt Black</option>
+                <option value="39">Showy Gold</option>
+                <option value="40">Pale Violet Red</option>
+                <option value="41">Lavender</option>
+                <option value="42">Turquoise</option>
+                <option value="43">Yellow</option>
+                <option value="44">Lime Green</option>
+              </select>
+            </div>
+            <div class="form-group payment">
+              <label class="buyTitle text-center">
+                Method of <strong>payment</strong> :
+              </label>
+              <div id="radios" class="text-center">
+                <label for="driving" class="material-icons">
+                  <input
+                    type="radio"
+                    name="mode"
+                    id="driving"
+                    value="driving"
+                  />
+                  <i class="fab fa-btc fa-3x"></i>
+                </label>
+                <label for="cycling" class="material-icons">
+                  <input
+                    type="radio"
+                    name="mode"
+                    id="cycling"
+                    value="cycling"
+                  />
+                  <i class="fab fa-cc-visa fa-3x"></i>
+                </label>
+                <label for="walking" class="material-icons">
+                  <input
+                    type="radio"
+                    name="mode"
+                    id="walking"
+                    value="walking"
+                  />
+                  <i class="fab fa-cc-mastercard fa-3x"></i>
+                </label>
+                <label for="male" class="material-icons">
+                  <input type="radio" name="mode" id="male" value="walking" />
+                  <i class="fab fa-cc-paypal fa-3x"></i>
+                </label>
+              </div>
+            </div>
+
+            <div class="form-group text-center">
+              <button class="btn btn-lg btn-primary checkOut">
+                <i class="fas fa-shopping-cart btnIcon"> Check Out</i>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- The Footer -->
+    <div class="container-fluid footer">
+      <div class="row">
+        <div class="col-md-4">
+          <h4>Heading</h4>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo,
+            ut.
+          </p>
+
+          <p>
+            <i class="fab fa-facebook-square"></i>
+            <i class="fab fa-linkedin"></i>
+          </p>
+        </div>
+        <div class="col-md-4">
+          <h4 class="text-center">Links</h4>
+          <ul>
+            <li>
+              <a href="">Lorem ipsum dolor sit amet consectetur.</a>
+            </li>
+            <li>
+              <a href="">Lorem ipsum dolor sit.</a>
+            </li>
+            <li>
+              <a href="">Lorem ipsum dolor sit amet consectetur.</a>
+            </li>
+            <li>
+              <a href="">Lorem ipsum dolor sit amet consectetur.</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-md-4">
+          <h4>Location</h4>
+          <p>1214, Lorem ipsum, lorem ipsum</p>
+          <p>
+            <i class="fas fa-phone-alt"></i>
+            +(515) 922-211-3167
+          </p>
+          <p>
+            <i class="far fa-envelope"></i>
+            something@somesite.com
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <p class="rights">&copy;2020 All Right Reserved.</p>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
